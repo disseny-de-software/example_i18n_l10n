@@ -1,0 +1,51 @@
+{
+  "@@locale": "de_DE",
+  "myHomePageListTitle": "Einige lokalisierte Zeichenfolgen",
+  "myHomePageButtonEnglish": "Englisch",
+  "myHomePageButtonGerman": "Deutsch",
+  "myHomePageWelcome": "Willkommen {name}",
+  "myHomePageName": "Mein Name ist {lastName}, {firstName} {lastName}",
+  "@myHomePageName": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {}
+    }
+  },
+  "myHomePageNewMessages": "{howMany, plural, one{Sie haben 1 Nachricht} other{Sie haben {howMany} Nachrichten}}",
+  "@myHomePageNewMessages": {
+    "placeholders": {
+      "howMany": {
+        "type": "int"
+      }
+    }
+  },
+  "myHomePageCurrentDateTime": "Datum {date} Zeit {time}",
+  "@myHomePageCurrentDateTime": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      },
+      "time": {
+        "type": "DateTime",
+        "format": "jm"
+      }
+    }
+  },
+  "myHomePageTotalAmount": "Gesamt {total}",
+  "@muHomePageTotalAmount": {
+    "placeholders": {
+      "total": {
+        "type": "double",
+        "format": "currency",
+        "optionalParameters": {
+          "name": "EUR",
+          "symbol": "€",
+          "decimalDigits": 2,
+          "customPattern": "¤#0.00"
+        }
+      }
+    }
+  }
+}
+

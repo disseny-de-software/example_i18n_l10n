@@ -1,0 +1,50 @@
+{
+  "@@locale": "en_US",
+  "myHomePageListTitle": "Some localized strings:",
+  "myHomePageButtonEnglish": "English",
+  "myHomePageButtonGerman": "German",
+  "myHomePageWelcome": "Welcome {name}",
+  "myHomePageName": "My name is {lastName}, {firstName} {lastName}",
+  "@myHomePageName": {
+    "placeholders": {
+      "firstName": {},
+      "lastName": {}
+    }
+  },
+  "myHomePageNewMessages": "{howMany, plural, zero{You don't have new messages} one{You have 1 message} other{You have {howMany} messages}}",
+  "@myHomePageNewMessages": {
+    "placeholders": {
+      "howMany": {
+        "type": "int"
+      }
+    }
+  },
+  "myHomePageCurrentDateTime": "Date {date} Time {time}",
+  "@myHomePageCurrentDateTime": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      },
+      "time": {
+        "type": "DateTime",
+        "format": "jm"
+      }
+    }
+  },
+  "myHomePageTotalAmount": "Total {total}",
+  "@muHomePageTotalAmount": {
+    "placeholders": {
+      "total": {
+        "type": "double",
+        "format": "currency",
+        "optionalParameters": {
+          "name": "USD",
+          "symbol": "$",
+          "decimalDigits": 2,
+          "customPattern": "¤#0.00"
+        }
+      }
+    }
+  }
+}
