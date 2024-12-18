@@ -32,7 +32,7 @@
       }
     }
   },
-  "myHomePageTotalAmount": "Gesamt {total}",
+  "myHomePageTotalAmount": "Gesamt {total} €",
   "@muHomePageTotalAmount": {
     "placeholders": {
       "total": {
@@ -41,8 +41,7 @@
         "optionalParameters": {
           "name": "EUR",
           "symbol": "€",
-          "decimalDigits": 2,
-          "customPattern": "¤#0.00"
+          "decimalDigits": 2
         }
       }
     }

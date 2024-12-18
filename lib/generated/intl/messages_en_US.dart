@@ -22,20 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m0(date, time) => "Date ${date} Time ${time}";
 
-
   static String m1(firstName, lastName) =>
       "My name is ${lastName}, ${firstName} ${lastName}";
-
 
   static String m2(howMany) =>
       "${Intl.plural(howMany, zero: 'You don\'t have new messages', one: 'You have 1 message', other: 'You have ${howMany} messages')}";
 
-
-  static String m3(total) => "Total ${total}";
-
+  static String m3(total) => "Total \$${total}";
 
   static String m4(name) => "Welcome ${name}";
-
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{

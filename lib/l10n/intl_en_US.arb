@@ -32,7 +32,7 @@
       }
     }
   },
-  "myHomePageTotalAmount": "Total {total}",
+  "myHomePageTotalAmount": "Total ${total}",
   "@muHomePageTotalAmount": {
     "placeholders": {
       "total": {
@@ -41,8 +41,7 @@
         "optionalParameters": {
           "name": "USD",
           "symbol": "$",
-          "decimalDigits": 2,
-          "customPattern": "¤#0.00"
+          "decimalDigits": 2
         }
       }
     }

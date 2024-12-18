@@ -45,7 +45,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final int _numMessages = 2;
-  final double _totalAmount = 2500.0;
+  final double _totalAmount = 2500.0; // US Dollars
   final DateTime _now = DateTime.now();
   /* not needed anymore
   final DateFormat _dateFormat = DateFormat.yMd();
@@ -55,11 +55,11 @@ class _MyHomePageState extends State<MyHomePage> {
    */
 
   double _convertEurosToDollarsIfNeeded(double amount) {
-    const double exchangeRateEURtoUSD = 1.095;
-    if (Intl.getCurrentLocale().startsWith('de')) {
+    const double exchangeRateUSDtoEUR = 0.985;
+    if (Intl.getCurrentLocale().startsWith('en_US')) {
       return amount;
-    } else if (Intl.getCurrentLocale().startsWith('en')) {
-      return double.parse((exchangeRateEURtoUSD * amount).toStringAsFixed(2));
+    } else if (Intl.getCurrentLocale().startsWith('de')) {
+      return double.parse((exchangeRateUSDtoEUR * amount).toStringAsFixed(2));
       // round to 2 decimals
     } else {
       assert(false);

@@ -28,7 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static String m2(howMany) =>
       "${Intl.plural(howMany, one: 'Sie haben 1 Nachricht', other: 'Sie haben ${howMany} Nachrichten')}";
 
-  static String m3(total) => "Gesamt ${total}";
+  static String m3(total) => "Gesamt ${total} €";
 
   static String m4(name) => "Willkommen ${name}";
 
